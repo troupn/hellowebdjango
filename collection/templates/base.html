@@ -11,6 +11,16 @@
     {% block header %}{% endblock header %}
 </head>
 <body>
+    <header>
+        <h1>Hello Web App</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</li>
+                <li><a href="{% url 'about' %}">About</li>
+                <li><a href="{% url 'contact' %}">Contact</li>
+            </ul>
+        </nav>
+    </header>
     {% block content %}{% endblock content %}
     {% block footer %}{% endblock footer %}
 </body>
