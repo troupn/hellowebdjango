@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
+{% load humanize %}
 {% block title %}
     Homepage - {{ block.super }}
 {% endblock title %}
 
 {% block content %}
     <h1>Hello World!</h1>
-    <!-- here's the variable we are passing in -->
     <p>{{ number }}</p>
 {% endblock content %}
